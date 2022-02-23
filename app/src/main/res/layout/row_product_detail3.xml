@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="productDetail3RowModel" type="com.tejaswisapplication.app.modules.productdetail.data.model.ProductDetail3RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_141pxh" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/imageProductimage"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="@dimen/_109pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/txtFSNikeAirM"
+            app:layout_constraintDimensionRatio="1.0:1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            imageRes="@{@drawable/img_productimage_1}" tools:src="@drawable/img_productimage_1"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtFSNikeAirM"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="0dp"
+            android:text="@{productDetail3RowModel.txtFSNikeAirM}"
+            app:layout_constraintBottom_toTopOf="@+id/txtPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageProductimage"
+            style="@style/txtPoppinsbold12" tools:text="@string/msg_fs_nike_air_m"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtPrice"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{productDetail3RowModel.txtPrice}"
+            app:layout_constraintBottom_toTopOf="@+id/constraintDiscount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFSNikeAirM"
+            style="@style/txtPoppinsbold12_1" tools:text="@string/lbl_299_43"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintDiscount"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtPrice">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtPrice1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{productDetail3RowModel.txtPrice1}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtOffer"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtPoppinsregular10" tools:text="@string/lbl_534_33"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtOffer"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_width="0dp" android:singleLine="true"
+                android:text="@{productDetail3RowModel.txtOffer}"
+                app:layout_constraintBaseline_toBaselineOf="@+id/txtPrice1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtPrice1"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtPoppinsbold10_1" tools:text="@string/lbl_24_off"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
