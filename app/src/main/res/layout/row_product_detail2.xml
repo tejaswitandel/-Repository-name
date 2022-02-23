@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="productDetail2RowModel" type="com.tejaswisapplication.app.modules.productdetail.data.model.ProductDetail2RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintShown"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:id="@+id/txtShown"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_44pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{productDetail2RowModel.txtShown}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtLaserBlueAnth"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtPoppinsregular12_1" tools:text="@string/lbl_shown"/>
+        <TextView android:id="@+id/txtLaserBlueAnth"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_127pxh"
+            android:layout_width="wrap_content"
+            android:text="@{productDetail2RowModel.txtLaserBlueAnth}"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txtShown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.45"
+            app:layout_constraintStart_toEndOf="@+id/txtShown"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtPoppinsregular12" tools:text="@string/msg_laser_blue_anth"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

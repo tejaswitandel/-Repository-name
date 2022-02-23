@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">tejaswi_s_application1</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="msg_you_might_also">You Might Also Like</string>
+<string name="msg_fs_nike_air_m">FS - Nike Air Max 270 React...</string>
+<string name="msg_december_10_20">December 10, 2016</string>
+<string name="lbl_see_more">See More</string>
+<string name="lbl_add_to_cart">Add To Cart</string>
+<string name="lbl_6">6</string>
+<string name="lbl_7">7</string>
+<string name="lbl_8">8</string>
+<string name="lbl_james_lawson">James Lawson</string>
+<string name="msg_fs_quilted_ma">FS - QUILTED MAXI CROS...</string>
+<string name="lbl_4_5">4.5</string>
+<string name="lbl_select_size">Select Size</string>
+<string name="lbl_6_5">6.5</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_299_43">$299,43</string>
+<string name="lbl_8_5">8.5</string>
+<string name="lbl_shown">Shown:</string>
+<string name="lbl_7_5">7.5</string>
+<string name="lbl_review_product">Review Product</string>
+<string name="lbl_24_off">24% Off</string>
+<string name="msg_nike_air_zoom_p">Nike Air Zoom Pegasus 36 Miami</string>
+<string name="lbl_534_33">$534,33</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="msg_laser_blue_anth">Laser Blue/Anthracite/Watermelon/White</string>
+<string name="msg_nike_air_max_27">Nike Air Max 270 Rea...</string>
+<string name="lbl_select_color">Select Color</string>
+<string name="lbl_cd0113_400">CD0113-400</string>
+<string name="lbl_style">Style:</string>
+<string name="lbl_specification">Specification</string>
+<string name="msg_air_max_are_alw">air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</string>
+<string name="lbl_5_review">(5 Review)</string>
+<string name="lbl_product_detail">Product Detail</string>
+<string name="msg_the_nike_air_ma">The Nike Air Max 270 React ENG combines a full-length React foam midsole with a 270 Max Air unit for unrivaled comfort and a striking visual experience.</string>
+<string name="msg_this_contact_has_no_phone_nu">This contact has no phone number</string>
+</resources>
